@@ -1,6 +1,6 @@
 <?php
-
-$conexion = mysqli_connect("localhost","root","","registro");
+//localhost/phpmyadmin
+$conexion = mysqli_connect("localhost","root","","registro");//conexion con la basededatos
 
 
 ?>
