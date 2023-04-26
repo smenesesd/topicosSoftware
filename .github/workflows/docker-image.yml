@@ -21,7 +21,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASS
     - name: Build the Docker image
-      run: docker build /randomquotes --file Dockerfile --tag smenesesd/express-randomquotes:latest
+      run: docker build ./randomquotes/ --file Dockerfile --tag smenesesd/express-randomquotes:latest
       
     - name: Docker Push
       run: docker push smenesesd/express-randomquotes
